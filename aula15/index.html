@@ -8,48 +8,65 @@
     <title>Torre de Etraud</title>
   </head>
   <body>
-
     <header>
       <div class="container">
         <div class="nome">
-          <h1><span id="span1">Torre de</span> <span>Etraud</span></h1>
+          <a href="#bemvindo">
+            <h1><span id="span1">Torre de</span> <span>Etraud</span></h1>
+          </a>
         </div>
         <div class="menuhead">
           <nav>
-            <a href="#">Home</a>
-            <a href="#">Filmes e Series</a>
-            <a href="#">Animes</a>
-            <a href="#">Contato</a>
+            <a href="#home">Home</a>
+            <a href="#filme">Filmes e Series</a>
+            <a href="#anime">Animes</a>
+            <a href="#contato">Contato</a>
           </nav>
         </div>
         <div class="pesquise">
-            <input placeholder="Type to search..." required="" class="input" name="text" type="text">
-            <div class="icon">
-                <svg viewBox="0 0 512 512" class="ionicon" xmlns="http://www.w3.org/2000/svg">
-                    <title>Search</title>
-                    <path stroke-width="32" stroke-miterlimit="10" stroke="currentColor" fill="none" d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z"></path>
-                    <path d="M338.29 338.29L448 448" stroke-width="32" stroke-miterlimit="10" stroke-linecap="round" stroke="currentColor" fill="none"></path>
-                </svg>
-            </div>
+          <input
+            placeholder="Type to search..."
+            required=""
+            class="input"
+            name="text"
+            type="text"
+          />
+          <div class="icon">
+            <svg
+              viewBox="0 0 512 512"
+              class="ionicon"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Search</title>
+              <path
+                stroke-width="32"
+                stroke-miterlimit="10"
+                stroke="currentColor"
+                fill="none"
+                d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z"
+              ></path>
+              <path
+                d="M338.29 338.29L448 448"
+                stroke-width="32"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke="currentColor"
+                fill="none"
+              ></path>
+            </svg>
+          </div>
         </div>
       </div>
     </header>
-
-    <!-- <header>
-      <h1><span id="span1">Torre de</span> <span>Etraud</span></h1>
-      <p>Home</p>
-      <p>Filmes e Series</p>
-      <p>Animes</p>
-      <p>Contate-nos</p>
-      <div class="pesquisa">
-        <img src="/assets/search.png" alt="" />
-        <input type="text" placeholder="Buscar" />
-      </div>
-    </header> -->
-
-
     <main>
+      <section id="bemvindo">
+        <h1><span>Bem</span>-Vindo</h1>
+      </section>
+
+      <div class="divisora"></div>
+
       <section id="home">
+        <h1 class="fil">Home</h1>
         <div class="area">
           <div class="main">
             <img src="/assets/main.webp" alt="" />
@@ -76,76 +93,56 @@
           </aside>
         </div>
       </section>
-      <section>
-        <div class="area2">
-          <div class="trailer">
-            <img src="/assets/trailer.jpg" alt="">
-            <div>
-              <p>Assista agora o trailer do filme Black Adam</p>
-            </div>
-            <a href="https://youtu.be/X0tOpBuYasI" target="_blank"><img src="/assets/play.png" alt=""></a>
-          </div>
-        </div>
-      </section>
 
       <div class="divisora"></div>
 
-
-      <h1 class="fil">Filmes e Series</h1>
       <section id="filme">
+        <h1 class="fil">Filmes e Series</h1>
         <div class="area3">
           <div class="main2">
             <img src="/assets/main2.jpg" alt="" />
             <div>
-              <p>
-                Noticas sobre lançamento de Avatar 2.
-              </p>
+              <p>Noticias sobre lançamento de Avatar 2</p>
             </div>
             <button>
               <span></span>
               <span></span>
               <span></span>
               <span></span>
-               Saiba Mais
+              Saiba Mais
             </button>
           </div>
           <aside id="a3">
             <img src="/assets/a3.png" alt="" />
             <div>
-              <p>Top Gun: Maverick bate bilheteria de 1 bilhão de dolares.</p>
+              <p>Top Gun: Maverick bate bilheteria de 1 bilhão de dolares</p>
             </div>
           </aside>
           <aside id="a4">
             <img src="/assets/a4.jpg" alt="" />
             <div>
-              <p>
-                Thor: Amor e Trovão, fracasso da Marvel?
-              </p>
+              <p>Thor: Amor e Trovão, fracasso da Marvel?</p>
             </div>
           </aside>
         </div>
       </section>
 
-
       <div class="divisora"></div>
 
-
-      <h1 class="fil">Animes</h1>
       <section id="anime">
+        <h1 class="fil">Animes</h1>
         <div class="area4">
           <div class="main3">
             <img src="/assets/main3.jpg" alt="" />
             <div>
-              <p>
-                Começa o lançamento do arco da guerra em Bleach
-              </p>
+              <p>Começa o lançamento do arco da guerra em Bleach</p>
             </div>
             <button>
               <span></span>
               <span></span>
               <span></span>
               <span></span>
-               Saiba Mais
+              Saiba Mais
             </button>
           </div>
           <aside id="a5">
@@ -166,14 +163,21 @@
       </section>
     </main>
     <footer id="contato">
-      <p>© 2022. Todos direitos reservados ao aluno Gustavo Duarte. 
-        <br>
-        Este material não pode ser publicado, transmitido por broadcast, 
+      <p>
+        © 2022. Todos direitos reservados ao aluno Gustavo Duarte.
+        <br />
+        Este material não pode ser publicado, transmitido por broadcast,
         reescrito ou redistribuído sem autorização.
       </p>
-      <img src="/assets/insta.png" alt="">
-      <img src="/assets/face.png" alt="">
-      <img src="/assets/you.png" alt="">
+      <a href="https://www.instagram.com/gustavoduarte1810/" target="_blank"
+        ><img src="/assets/insta.png" alt=""
+      /></a>
+      <a href="https://www.facebook.com/Hadgarr/" target="_blank"
+        ><img src="/assets/face.png" alt=""
+      /></a>
+      <a href="https://www.youtube.com/" target="_blank"
+        ><img src="/assets/you.png" alt=""
+      /></a>
     </footer>
   </body>
 </html>

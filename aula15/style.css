@@ -1,18 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen&family=Titillium+Web:ital,wght@1,300&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 html {
-  background-image: url(/assets/back.jpg);
+  scroll-behavior: smooth;
 }
 header {
+  position: fixed;
+  z-index: 999;
   width: 100%;
   height: 8vh;
-  background-color: rgba(0, 0, 0, 0.411);
+  background-color: rgba(0, 0, 0, 0.8);
   padding: 10px;
   color: white;
 }
@@ -21,50 +25,50 @@ header > img {
   height: auto;
 }
 .nome {
-  /* font-size: 40px; */
   font-family: "Great Vibes", cursive;
   cursor: pointer;
 }
 span {
   color: #ff7f00;
 }
-#span1{
+#span1 {
   color: white;
 }
-.container{
+.container {
   max-width: 1080px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.nome,.pesquise{
+.nome,
+.pesquise {
   width: 25%;
 }
-.menuhead{
+.menuhead {
   width: 50%;
 }
-.menuhead nav a{
+.menuhead nav a {
   color: #b4b4b4;
   text-decoration: none;
   padding-right: 50px;
   font-size: 18px;
   position: relative;
 }
-.menuhead nav a:hover{
+.menuhead nav a:hover {
   color: white;
 }
-.menuhead nav a::after{
+.menuhead nav a::after {
   content: " ";
   width: 0px;
   height: 4px;
-  background-image: linear-gradient(45deg, #FF2500, #FF7100);
+  background-image: linear-gradient(45deg, #ff2500, #ff7100);
   position: absolute;
   top: 25px;
   left: 0;
   transition: width 0.5s;
 }
-.menuhead nav a:hover::after{
+.menuhead nav a:hover::after {
   width: 30px;
 }
 .pesquise {
@@ -81,8 +85,9 @@ span {
   outline: none;
   width: var(--size-button);
   transition: all ease 0.3s;
-  background-color: #191A1E;
-  box-shadow: 1.5px 1.5px 3px #0e0e0e, -1.5px -1.5px 3px rgb(95 94 94 / 25%), inset 0px 0px 0px #0e0e0e, inset 0px -0px 0px #5f5e5e;
+  background-color: #191a1e;
+  box-shadow: 1.5px 1.5px 3px #0e0e0e, -1.5px -1.5px 3px rgb(95 94 94 / 25%),
+    inset 0px 0px 0px #0e0e0e, inset 0px -0px 0px #5f5e5e;
   border-radius: 50px;
   cursor: pointer;
 }
@@ -91,7 +96,8 @@ span {
 .input:not(:invalid) {
   width: 200px;
   cursor: text;
-  box-shadow: 0px 0px 0px #0e0e0e, 0px 0px 0px rgb(95 94 94 / 25%), inset 1.5px 1.5px 3px #0e0e0e, inset -1.5px -1.5px 3px #5f5e5e;
+  box-shadow: 0px 0px 0px #0e0e0e, 0px 0px 0px rgb(95 94 94 / 25%),
+    inset 1.5px 1.5px 3px #0e0e0e, inset -1.5px -1.5px 3px #5f5e5e;
 }
 
 .input:focus + .icon,
@@ -114,76 +120,46 @@ span {
   width: 100%;
   height: 100%;
 }
-
-/* .pesquisa {
-  width: 300px;
-  height: 30px;
-  box-shadow: 2px 2px 2px;
-  border: 1px solid black;
-  border-radius: 10px;
-  padding: 7px;
+#bemvindo {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
-}
-.pesquisa input {
-  margin-left: 3px;
-  height: 22px;
-  width: 263px;
-  border: none;
-  outline: none;
-}
-.pesquisa img {
-  width: 15px;
-  height: auto;
-} */
-#menudrop {
-  display: flex;
-  flex-direction: column;
-  width: 15vw;
-  height: auto;
-  position: absolute;
-  top: 78px;
-  left: -16vw;
-  border: 1px solid white;
-  box-shadow: 2px 2px 2px white;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  transition: 0.5s;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 999;
-}
-#menu:checked ~ #menudrop {
-  left: 0;
-}
-#menudrop > a > img {
-  margin: 3px;
-  width: 20px;
-  height: 20px;
-}
-
-#menudrop > a {
-  margin: 20px;
-  justify-content: center;
-  text-decoration: none;
+  font-size: 50px;
   color: white;
-  font-size: 24px;
-  display: flex;
-  padding: 10px;
+  font-family: "Silkscreen", cursive;
 }
-#menu {
-  display: none;
+section {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-attachment: fixed;
 }
-.hamb {
-  width: 25px;
-  height: 34px;
+section:nth-of-type(1) {
+  background-image: url(assets/back.jpg);
+  height: 1000px;
 }
-.hamb:hover {
-  cursor: pointer;
+section:nth-of-type(2) {
+  background-image: url(assets/wall.png);
+  height: 1100px;
+}
+section:nth-of-type(3) {
+  background-image: url(assets/back2.jpg);
+  height: 1400px;
+}
+section:nth-of-type(4) {
+  background-image: url(assets/back3.jpg);
+  height: 1900px;
+}
+::-webkit-scrollbar{
+  width: 10px;
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #ff7f00;
 }
 .area {
-  width: 98vw;
+  width: 100%;
   height: auto;
   display: grid;
   grid-template-columns: 2fr 3fr;
@@ -191,9 +167,9 @@ span {
   grid-template-areas:
     "a1 main"
     "a2 main";
-  gap: 0 180px;
+  gap: 0 400px;
   padding: 60px;
-  padding-left: 180px;
+  padding-left: 100px;
 }
 .main {
   grid-area: main;
@@ -285,60 +261,23 @@ span {
   cursor: pointer;
   color: #ff8000ab;
 }
-.area2{
-  width: 98vw;
-  height: auto;
-  padding: 70px;
-}
-.trailer {
-  display: flex;
-  grid-area: trailer;
-  position: relative;
-  border-radius: 5px;
-  justify-content: center;
-}
-.trailer div {
-  display: flex;
-  width: 100%;
-  height: 100px;
-  position: absolute;
-  top: 0;
-  align-items: center;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.3);
-  font-size: 30px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  padding: 10px;
-}
-.trailer img {
-  width: 100%;
-  height: 100%;
-  border-radius: 5px;
-}
-.trailer > a{
-  position: absolute;
-  align-self: center;
-  width: 100px;
-  height: 100px;
-}
 
-
-.divisora{
-  width: 98vw;
+.divisora {
+  width: 100%;
   height: 50vh;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0);
 }
 
-.fil{
-  font-family:'Fuzzy Bubbles', cursive;
+.fil {
+  font-family: "Titillium Web", sans-serif;
   display: flex;
   justify-content: center;
   color: #ff7f00;
   padding-top: 100px;
+  font-size: 40px;
 }
 .area3 {
-  width: 98vw;
+  width: 100%;
   height: auto;
   display: grid;
   grid-template-columns: 3fr 2fr;
@@ -395,88 +334,89 @@ button {
   cursor: pointer;
   font-weight: bold;
   margin-top: 30px;
- }
- 
- button:hover {
+}
+
+button:hover {
   box-shadow: 0 0 10px #ff7f00, 0 0 25px #ff4800, 0 0 50px #ff7f00;
   transition-delay: 0.6s;
- }
- 
- button span {
+}
+
+button span {
   position: absolute;
- }
- 
- button span:nth-child(1) {
+}
+
+button span:nth-child(1) {
   top: 0;
   left: -100%;
   width: 100%;
   height: 2px;
   background: linear-gradient(90deg, transparent, #ff7f00);
- }
- 
- button:hover span:nth-child(1) {
+}
+
+button:hover span:nth-child(1) {
   left: 100%;
   transition: 0.7s;
- }
- 
- button span:nth-child(3) {
+}
+
+button span:nth-child(3) {
   bottom: 0;
   right: -100%;
   width: 100%;
   height: 2px;
   background: linear-gradient(90deg, transparent, #ff4800);
- }
- 
- button:hover span:nth-child(3) {
+}
+
+button:hover span:nth-child(3) {
   right: 100%;
   transition: 0.7s;
   transition-delay: 0.35s;
- }
- 
- button span:nth-child(2) {
+}
+
+button span:nth-child(2) {
   top: -100%;
   right: 0;
   width: 2px;
   height: 100%;
   background: linear-gradient(180deg, transparent, #ff7f00);
- }
- 
- button:hover span:nth-child(2) {
+}
+
+button:hover span:nth-child(2) {
   top: 100%;
   transition: 0.7s;
   transition-delay: 0.17s;
- }
- 
- button span:nth-child(4) {
+}
+
+button span:nth-child(4) {
   bottom: -100%;
   left: 0;
   width: 2px;
   height: 100%;
   background: linear-gradient(360deg, transparent, #ff4800);
- }
- 
- button:hover span:nth-child(4) {
+}
+
+button:hover span:nth-child(4) {
   bottom: 100%;
   transition: 0.7s;
   transition-delay: 0.52s;
- }
- 
- button:active {
+}
+
+button:active {
   background: #ff7f00;
   background: linear-gradient(to top right, #ff7f00, #ff4800);
   color: #bfbfbf;
   box-shadow: 0 0 8px #ff7f00, 0 0 8px #ff4800, 0 0 8px #ff7f00;
   transition: 0.1s;
- }
- 
- button:active span:nth-child(1) 
- span:nth-child(2) 
- span:nth-child(2) 
- span:nth-child(2) {
+}
+
+button:active
+  span:nth-child(1)
+  span:nth-child(2)
+  span:nth-child(2)
+  span:nth-child(2) {
   transition: none;
   transition-delay: none;
- }
- 
+}
+
 #a3 {
   grid-area: a3;
   position: relative;
@@ -643,7 +583,7 @@ button {
   color: #ff8000ab;
 }
 footer {
-  width: 98vw;
+  width: 100%;
   height: 10vh;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
@@ -651,7 +591,7 @@ footer {
   align-items: center;
   padding: 10px;
 }
-footer img {
+footer a img {
   margin-left: 120px;
   width: 50px;
   height: 50px;
