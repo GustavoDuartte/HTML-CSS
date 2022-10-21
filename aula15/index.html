@@ -8,44 +8,48 @@
     <title>Torre de Etraud</title>
   </head>
   <body>
+
     <header>
-      <label for="menu">
-        <img src="./assets/hambu1.png" alt="menulateral" class="hamb" />
-      </label>
-      <input type="checkbox" id="menu" />
+      <div class="container">
+        <div class="nome">
+          <h1><span id="span1">Torre de</span> <span>Etraud</span></h1>
+        </div>
+        <div class="menuhead">
+          <nav>
+            <a href="#">Home</a>
+            <a href="#">Filmes e Series</a>
+            <a href="#">Animes</a>
+            <a href="#">Contato</a>
+          </nav>
+        </div>
+        <div class="pesquise">
+            <input placeholder="Type to search..." required="" class="input" name="text" type="text">
+            <div class="icon">
+                <svg viewBox="0 0 512 512" class="ionicon" xmlns="http://www.w3.org/2000/svg">
+                    <title>Search</title>
+                    <path stroke-width="32" stroke-miterlimit="10" stroke="currentColor" fill="none" d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z"></path>
+                    <path d="M338.29 338.29L448 448" stroke-width="32" stroke-miterlimit="10" stroke-linecap="round" stroke="currentColor" fill="none"></path>
+                </svg>
+            </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- <header>
       <h1><span id="span1">Torre de</span> <span>Etraud</span></h1>
+      <p>Home</p>
+      <p>Filmes e Series</p>
+      <p>Animes</p>
+      <p>Contate-nos</p>
       <div class="pesquisa">
         <img src="/assets/search.png" alt="" />
         <input type="text" placeholder="Buscar" />
       </div>
-      <div id="menudrop">
-        <a href="">
-          <p>Home</p>
-        </a>
-        <a href="">
-          <p>Jogos</p>
-        </a>
-        <a href="">
-          <p>Filmes e Series</p>
-        </a>
-        <a href="">
-          <p>Animes</p>
-        </a>
-        <a href="">
-          <p>Livros</p>
-        </a>
-        <a href="">
-          <p>Contate-nos</p>
-          <img src="/assets/link.png" alt="" />
-        </a>
-        <a href="">
-          <p>Dê-nos suas ideias</p>
-          <img src="/assets/link.png" alt="" />
-        </a>
-      </div>
-    </header>
+    </header> -->
+
+
     <main>
-      <section>
+      <section id="home">
         <div class="area">
           <div class="main">
             <img src="/assets/main.webp" alt="" />
@@ -72,24 +76,104 @@
           </aside>
         </div>
       </section>
-      <section></section>
       <section>
         <div class="area2">
+          <div class="trailer">
+            <img src="/assets/trailer.jpg" alt="">
+            <div>
+              <p>Assista agora o trailer do filme Black Adam</p>
+            </div>
+            <a href="https://youtu.be/X0tOpBuYasI" target="_blank"><img src="/assets/play.png" alt=""></a>
+          </div>
+        </div>
+      </section>
+
+      <div class="divisora"></div>
+
+
+      <h1 class="fil">Filmes e Series</h1>
+      <section id="filme">
+        <div class="area3">
+          <div class="main2">
+            <img src="/assets/main2.jpg" alt="" />
+            <div>
+              <p>
+                Noticas sobre lançamento de Avatar 2.
+              </p>
+            </div>
+            <button>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+               Saiba Mais
+            </button>
+          </div>
           <aside id="a3">
-            <div></div>
+            <img src="/assets/a3.png" alt="" />
+            <div>
+              <p>Top Gun: Maverick bate bilheteria de 1 bilhão de dolares.</p>
+            </div>
           </aside>
           <aside id="a4">
-            <div></div>
+            <img src="/assets/a4.jpg" alt="" />
+            <div>
+              <p>
+                Thor: Amor e Trovão, fracasso da Marvel?
+              </p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+
+      <div class="divisora"></div>
+
+
+      <h1 class="fil">Animes</h1>
+      <section id="anime">
+        <div class="area4">
+          <div class="main3">
+            <img src="/assets/main3.jpg" alt="" />
+            <div>
+              <p>
+                Começa o lançamento do arco da guerra em Bleach
+              </p>
+            </div>
+            <button>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+               Saiba Mais
+            </button>
+          </div>
+          <aside id="a5">
+            <img src="/assets/a5.webp" alt="" />
+            <div>
+              <p>Inicia-se o lançamento do anime Chainsaw Man</p>
+            </div>
+          </aside>
+          <aside id="a6">
+            <img src="/assets/a6.jpg" alt="" />
+            <div>
+              <p>
+                Está lançando a 3 temporada de Mob Psycho neste exato momento
+              </p>
+            </div>
           </aside>
         </div>
       </section>
     </main>
-    <footer>
-      <ul>
-        <li>Facebook</li>
-        <li>Instagram</li>
-        <li>Twitter</li>
-      </ul>
+    <footer id="contato">
+      <p>© 2022. Todos direitos reservados ao aluno Gustavo Duarte. 
+        <br>
+        Este material não pode ser publicado, transmitido por broadcast, 
+        reescrito ou redistribuído sem autorização.
+      </p>
+      <img src="/assets/insta.png" alt="">
+      <img src="/assets/face.png" alt="">
+      <img src="/assets/you.png" alt="">
     </footer>
   </body>
 </html>
