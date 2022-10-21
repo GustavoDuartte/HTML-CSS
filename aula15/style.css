@@ -151,11 +151,12 @@ section:nth-of-type(4) {
   background-image: url(assets/back3.jpg);
   height: 1900px;
 }
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 10px;
   scroll-behavior: smooth;
+  background-color: black;
 }
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background-color: #ff7f00;
 }
 .area {
