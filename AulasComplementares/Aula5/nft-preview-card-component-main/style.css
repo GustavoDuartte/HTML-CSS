@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #0d192b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.caixa {
+  border-radius: 15px;
+  width: 17%;
+  height: 600px;
+  padding: 20px;
+  background-color: #14253d;
+}
+.imagem {
+  position: relative;
+}
+.imagem img {
+  width: 100%;
+}
+.olho {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00fff759;
+}
+.olho img{
+  width: 50px;
+}
+.olho:hover{
+  cursor: pointer;
+  opacity: 1;
+}
+.texto .equi {
+  padding: 20px 0px 20px;
+  color: white;
+  font-size: 25px;
+}
+.texto .equi:hover {
+  cursor: pointer;
+  color: #00fff7;
+}
+.texto p {
+  font-size: 18px;
+  padding-bottom: 20px;
+  color: #7793bb;
+}
+.meio {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.et {
+  display: flex;
+  color: #00fff7;
+}
+.et p {
+  margin-left: 10px;
+}
+.clock {
+  display: flex;
+  color: #8bacda;
+}
+.clock p {
+  margin-left: 10px;
+}
+.bot {
+  border-top: 1px solid #2f415b;
+  display: flex;
+  align-items: center;
+  color: #8bacda;
+  padding: 10px;
+}
+.bot img {
+  border: 1px solid white;
+  border-radius: 100%;
+  width: 12%;
+}
+.bot p {
+  margin-left: 10px;
+}
+span {
+  color: white;
+}
+span:hover {
+  cursor: pointer;
+  color: #00fff7;
+}
+@media(max-width: 800px){
+  .caixa{
+    height: auto;
+    width: 40vw;
+  }
+  .imagem img{
+    width: 100%;
+  }
+}
