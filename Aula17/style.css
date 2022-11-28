@@ -1,26 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-#grad1 {
-  height: 200px;
-  width: 200px;
-  background-color: black;
-  border-radius: 100%;
-  position: relative;
+html {
+  background-color: #2e2e2e;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 10vh;
+  padding: 30px;
+  margin-bottom: 70px;
+}
+header > img {
+  width: 220px;
+  height: 50px;
+}
+.direitacima {
+  display: flex;
+  align-items: center;
+}
+.gerenciar {
+  color: #cfb53b;
+  border: 2px solid #cfb53b;
+  width: 210px;
+  height: 45px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: conic-gradient(red 20%, white 20%);
+  margin-left: 30px;
+  border-radius: 5px;
+  font-family: "Inter", sans-serif;
 }
-#grad2 {
-  height: 150px;
-  width: 150px;
-  border-radius: 100%;
-  background-color: white;
+.gerenciar:hover {
+  background-color: #cfb53b;
+  color: #2e2e2e;
+  cursor: pointer;
+}
+input {
+  padding-left: 20px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  width: 210px;
+  height: 45px;
+  border: none;
+  outline: none;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+.divfilme {
+  width: 250px;
+  height: 340px;
+  position: relative;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+.filme {
+  width: 100%;
+  border-radius: 15px;
+  height: 100%;
+  box-shadow: 1px 1px 20px 10px rgba(0, 0, 0, 0.6);
+}
+.hover {
   position: absolute;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  opacity: 0;
+}
+.play {
+  width: 50px;
+  height: 50px;
+}
+.hover:hover {
+  background-color: #cfb43b98;
+  opacity: 1;
+  cursor: pointer;
 }
