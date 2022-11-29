@@ -23,7 +23,8 @@ header > img {
   display: flex;
   align-items: center;
 }
-.gerenciar {
+.gerenciar,
+.gerenciar1 {
   color: #cfb53b;
   border: 2px solid #cfb53b;
   width: 210px;
@@ -34,6 +35,11 @@ header > img {
   margin-left: 30px;
   border-radius: 5px;
   font-family: "Inter", sans-serif;
+}
+.gerenciar1 {
+  color: #2e2e2e;
+  background-color: #cfb53b;
+  margin: 20px 0px 10px;
 }
 .gerenciar:hover {
   background-color: #cfb53b;
@@ -92,42 +98,38 @@ main {
 .menudrop {
   position: absolute;
   top: 0;
-  /* left: -20vw; */
-  /* display: none; */
+  left: -100vw;
+  display: flex;
   flex-direction: column;
-  width: 20vw;
-  height: 20vh;
-  border: 2px solid white;
-  background-color: rgba(0, 0, 0, 0.2);
+  width: 70vw;
+  height: 100vh;
+  background-color: #2e2e2ea8;
+  z-index: 999;
+  transition: 0.2s;
 }
 .dentro {
   justify-content: center;
   align-items: center;
   display: flex;
   flex-direction: column;
+  padding: 30px;
 }
 .menudrop img {
-  width: 50px;
-  height: 50px;
+  margin: 25px;
+  width: 35px;
+  height: 35px;
 }
-header > input {
+header > input,
+label {
   display: none;
 }
-label {
-  /* display: none; */
-}
-.menu:checked ~ .menudrop {
-  display: flex;
-  left: 1%;
-  top: 1%;
+#menu:checked ~ .menudrop {
+  left: 0;
 }
 @media (max-width: 415px) {
-  input,
+  .barra,
   .gerenciar {
     display: none;
-  }
-  header > img {
-    margin-left: 70px;
   }
   .hamb {
     display: flex;
@@ -140,13 +142,16 @@ label {
   label {
     display: block;
   }
-  .menu:checked ~ .menudrop {
-    display: flex;
-    left: 0;
-    top: 0;
-  }
   .direitacima {
     display: flex;
     flex-direction: column;
   }
+}
+::-webkit-scrollbar {
+  width: 10px;
+  scroll-behavior: smooth;
+  background-color: black;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #cfb53b;
 }
