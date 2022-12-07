@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        animation: mymove 6s;
+        background-image: radial-gradient(red, yellow);
+      }
+
+      @keyframes mymove {
+        0% {
+          top: 0px;
+          left: 0px;
+        }
+        5%{
+          left: 10px;
+        }
+        10% {
+          top: 40px;
+          left: 900px;
+        }
+        30% {
+          border-radius: 100%;
+          width: 700px;
+          height: 500px;
+        }
+        50% {
+          transform: rotate(1000deg);
+        }
+        100% {
+          top: 0px;
+          left: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    
+
+    <div>
+    </div>
+  </body>
+</html>
